@@ -1,0 +1,10 @@
+*.pyc
+*.idea/
+ENV/
+
+*.swp
+*.log
+log/
+*.tar
+tags
+.DS_Store
