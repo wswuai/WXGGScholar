@@ -25,6 +25,6 @@ def process(dat):
     wc.parse_data(dat)
 
     if isinstance(wc.message, TextMessage):
-        return wc.response_text("thanks to attention. \n we are deving!")
+        return wc.response_text("thanks to attention. \nwe are deving!\n ------- \n Powered By XiaoGo @ 2016")
 
     return "success"
