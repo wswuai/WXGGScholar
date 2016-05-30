@@ -1,6 +1,6 @@
 from wechat_sdk import WechatConf
 from wechat_sdk import WechatBasic
-from wechat_sdk import TextMessage
+from wechat_sdk.messages import TextMessage
 
 from ..entry import app
 
