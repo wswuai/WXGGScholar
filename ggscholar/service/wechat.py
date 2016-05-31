@@ -4,6 +4,8 @@ from wechat_sdk.messages import TextMessage
 
 from ..entry import app
 
+import gscholar
+
 conf = WechatConf(
         token= app.config['WXTOKEN'],
         appid= app.config['WXAPPID'],
@@ -25,6 +27,6 @@ def process(dat):
     wc.parse_data(dat)
 
     if isinstance(wc.message, TextMessage):
-        return wc.response_text("thanks to attention. \nwe are deving!\n ------- \n Powered By XiaoGo @ 2016")
+        return wc.response_text(gscholar.google_scholar_query(wc.message.content))
 
     return "success"
